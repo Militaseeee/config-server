@@ -1,0 +1,16 @@
+server:
+  port: 8888  # Puerto estandar para el Config Server
+
+spring:
+  application:
+    name: logiflow-config-server
+
+  profiles:
+    active: native # Usaremos el sistema de archivos local para empezar las pruebas
+
+  cloud:
+    config:
+      server:
+        native:
+          # Aqui pongo la ruta de la carpeta donde creare los archivos .yaml de Tracking y Shipment
+          search-locations: 
